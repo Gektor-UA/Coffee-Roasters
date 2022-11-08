@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /* Уберает подчеркивание под ссылкой */
+    color: inherit; /* Цвет наследуется от родительского класса */
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.container{
+    max-width: 1150px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Блок header */
+.header{
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header__top{
+    padding: 48px 40px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__list{
+    color: #FFFFFF;
+    display: flex;
+}
+.menu__item + .menu__item{
+    margin-left: 40px;
+}
+.header__box{
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 275px;
+}
+.header__box-img{
+    margin-bottom: 24px;
+}
+.header__box-title{
+    font-size: 96px;
+    line-height: 96px;
+    margin-bottom: 24px;
+}
+.header__box-text{
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 48px;
+    max-width: 763px;
+    margin: 0 auto;
+}
+.header__box-link{
+    border: 1px solid #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 41px;
+}
+
+/* Блок product */
+.product{
+    background-image: url('../images/product-bg.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 144px 0;
+}
+.product__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product__items{
+    max-width: 352px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.product__item{
+    display: flex;
+    align-items: center;
+}
+.product__item-box{
+    text-align: right;
+    margin-right: 16px;
+}
+.product__title{
+    font-weight: 400;
+}
+.product__text{
+    font-size: 12px;
+}
+.product__item-box--1{
+    order: 1;
+    margin-left: 16px;
+}
