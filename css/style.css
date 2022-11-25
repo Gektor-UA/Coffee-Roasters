@@ -147,3 +147,100 @@ body{
     text-transform: uppercase;
     font-weight: 700;
 }
+
+/* Блок price */
+.price {
+    padding: 100px 0;
+}
+.price__title {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 48px;
+    position: relative;
+}
+.price__title::before{
+    content: '';
+    position: absolute;
+    width: 189px;
+    border: 1px solid #444444;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.price__text {
+    text-align: center;
+    max-width: 475px;
+    margin: 0 auto 48px;
+
+}
+.price__tabs {
+    position: relative;
+    /* margin: 3rem 0;
+    background: #1abc9c;
+    height: 14.75rem; */
+  }
+  .price__tabs::before,
+  .price__tabs::after {
+    content: "";
+    display: table;
+  }
+  .price__tabs::after {
+    clear: both;
+  }
+  .price__tab {
+    float: left;
+  }
+  .price__tab-switch {
+    display: none;
+  }
+  .price__tab-label {
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #fff;
+    border-right: 0.125rem solid #fff;
+    color: #000;
+    cursor: pointer;
+    top: 0;
+    /* left: 50%; */
+    transition: all 0.25s;
+  }
+  /* .price__tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+  } */
+  .price__tab-content {
+    height: 12rem;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fff;
+    color: #000000;
+    border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  .price__tab-switch:checked + .price__tab-label {
+    text-decoration: underline;
+    background: #fff;
+    color: #000000;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    /* top: -0.0625rem; */
+  }
+  .price__tab-switch:checked + label + .price__tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
