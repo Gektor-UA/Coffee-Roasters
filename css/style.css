@@ -230,3 +230,59 @@ body{
 .price__tab-text{
     font-size: 12px;
 }
+
+/* Блок testimonials */
+.testimonials {
+    padding: 100px 0;
+    background-image: url('../images/testimonials-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.testimonials__inner {
+    text-align: center;
+    color: #FFFFFF;
+}
+.testimonials__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 72px;
+    position: relative;
+}
+.testimonials__title::before {
+    content: "";
+    position: absolute;
+    width: 189px;
+    border: 1px solid #FFFFFF;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.slick-dots button{
+    font-size: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+}
+.slick-active button {
+    background-color: #fff;
+}
+.slick-dots li + li{
+    margin-left: 10px;
+}
+.testimonials__text + .testimonials__text{
+    margin-bottom: 48px;
+}
+.testimonials__text {
+    margin-bottom: 24px;
+}

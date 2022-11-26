@@ -1,9 +1,14 @@
 $(document).ready(function(){
     $(".tabs").lightTabs();
+
+    $('.testimonials__slider').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true
+    });
 });
-
-
-
 
 (function($){				
     jQuery.fn.lightTabs = function(options){
