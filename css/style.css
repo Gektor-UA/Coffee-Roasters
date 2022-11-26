@@ -175,88 +175,48 @@ body{
     margin: 0 auto 48px;
 
 }
-.price__tabs {
-position: relative;
-/* margin: 3rem 0;
-background: #1abc9c;
-height: 14.75rem; */
+.tabs{
+    display:inline-block;
 }
-.price__tabs::before,
-.price__tabs::after {
-content: "";
-display: table;
+.tabs > div{
+    padding-top:48px;
 }
-.price__tabs::after {
-clear: both;
+.tabs > div > div {
+    display: flex;
+    gap: 0 30px;
 }
-.price__tab {
-float: left;
+.tabs ul{
+    display: flex;
+    justify-content: center;
 }
-.price__tab-switch {
-display: none;
+.tabs ul:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:5px;
+    background:#46c765;
 }
-.price__tab-label {
-/* margin: 0 auto; */
-/* text-align: center; */
-text-transform: uppercase;
-position: relative;
-display: block;
-line-height: 2.75em;
-height: 3em;
-padding: 0 1.618em;
-background: #fff;
-border-right: 0.125rem solid #fff;
-color: #000;
-cursor: pointer;
-top: 0;
-/* left: 50%; */
-transition: all 0.25s;
+.tabs ul li{
+    text-transform: uppercase;
+    cursor:pointer;
+    display:block;
+    float:left;
+    padding:10px 15px;
+    color:#000000;
 }
-/* .price__tab-label:hover {
-top: -0.25rem;
-transition: top 0.25s;
-} */
-.price__tab-content {
-/* height: 12rem; */
-position: absolute;
-z-index: 1;
-top: 2.75em;
-left: 0;
-padding: 1.618rem;
-background: #fff;
-color: #000000;
-/* border-bottom: 0.25rem solid #bdc3c7; */
-opacity: 0;
-transition: all 0.35s;
+.tabs ul li.active, .tabs ul li.active:hover{
+    text-decoration: underline;
+    transition: all 0.5s;
 }
-.price__tab-switch:checked + .price__tab-label {
-text-decoration: underline;
-background: #fff;
-color: #000000;
-border-bottom: 0;
-border-right: 0.125rem solid #fff;
-transition: all 0.35s;
-z-index: 1;
-/* top: -0.0625rem; */
-}
-.price__tab-switch:checked + label + .price__tab-content {
-z-index: 2;
-opacity: 1;
-transition: all 0.35s;
-}
-
-
-.price__tab-inner{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px 30px;
+.tabs ul li:hover{
+    background:#d6d6d7;
 }
 .price__tab-item{
     display: flex;
-    /* justify-content: space-between; */
-    /* gap: 0 24px; */
+    margin-bottom: 24px;
 }
 .price__tab-box{
+    flex-basis: 448px;
     margin-left: 24px;
 }
 .price__tab-descr{
