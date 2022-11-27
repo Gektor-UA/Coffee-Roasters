@@ -386,3 +386,61 @@ text-align: center;
     font-size: 24px;
     line-height: 48px;
 }
+
+/* Блок newsletter */
+.newsletter {
+    padding: 100px 0;
+    background: #111111;
+}
+.newsletter__title {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+    position: relative;
+}
+.newsletter__title::before {
+    content: "";
+    position: absolute;
+    width: 189px;
+    border: 1px solid #FFFFFF;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.newsletter__text {
+    max-width: 474px;
+    color: #FFFFFF;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+.form {
+    text-align: center;
+}
+.newsletter__input {
+    width: 277px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    padding: 17px 24px;
+    margin-right: 24px;
+    color: #FFFFFF;
+}
+.newsletter__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.newsletter__btn {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 41px;
+    cursor: pointer;
+}
