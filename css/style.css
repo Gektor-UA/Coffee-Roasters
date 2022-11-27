@@ -262,6 +262,7 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 .slick-dots button{
     font-size: 0;
@@ -276,9 +277,6 @@ body{
 }
 .slick-active button {
     background-color: #fff;
-}
-.slick-dots li + li{
-    margin-left: 10px;
 }
 .testimonials__text + .testimonials__text{
     margin-bottom: 48px;
