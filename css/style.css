@@ -444,3 +444,27 @@ text-align: center;
     padding: 0 41px;
     cursor: pointer;
 }
+
+/* Блок footer */
+.footer {
+    padding: 48px 0;
+    background: #111111;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.footer__link {
+    font-size: 12px;
+}
+.footer__menu-list {
+    display: flex;
+    gap: 48px;
+    margin-right: 70px;
+}
+.footer__social {
+    display: flex;
+    gap: 26px;
+}
